@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 5
+    url: jdbc:postgresql://localhost:5432/ttbb
+    username: sh
+    password: ttlovezj

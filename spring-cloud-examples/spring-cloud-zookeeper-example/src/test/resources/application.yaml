@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    zookeeper:
+      enabled: false
+
+logging:
+  level:
+    org: info
