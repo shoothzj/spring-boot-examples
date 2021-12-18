@@ -1,7 +1,6 @@
 package com.github.shoothzj.mybatis.postgre;
 
 import com.github.shoothzj.mybatis.postgre.mapper.CountryMapper;
-import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -19,16 +18,16 @@ public class MybatisPostgreExample {
         SpringApplication.run(MybatisPostgreExample.class);
     }
 
-//    @Profile("!test")
-//    @Bean
-//    public DataSource dataSource() {
-//        DriverManagerDataSource dataSource = new DriverManagerDataSource();
-//        dataSource.setDriverClassName("org.postgresql.Driver");
-//        dataSource.setUrl("jdbc:postgre://localhost:5432/ttbb");
-//        dataSource.setUsername("sh");
-//        dataSource.setPassword("ttlovezj");
-//        return dataSource;
-//    }
+    @Profile("!test")
+    @Bean
+    public DataSource dataSource() {
+        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+        dataSource.setDriverClassName("org.postgresql.Driver");
+        dataSource.setUrl("jdbc:postgre://localhost:5432/ttbb");
+        dataSource.setUsername("sh");
+        dataSource.setPassword("ttlovezj");
+        return dataSource;
+    }
 
     @Bean
     CommandLineRunner createTable(@Autowired CountryMapper countryMapper) {
