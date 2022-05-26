@@ -10,13 +10,9 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-boot-mysql-common</module>
-        <module>spring-boot-mysql-config-code-example</module>
-        <module>spring-boot-mysql-config-yaml-example</module>
-        <module>spring-boot-mysql-flyway-example</module>
-        <module>spring-boot-mysql-test-init-sql-example</module>
+        <module>spring-cloud-zookeeper-example</module>
     </modules>
 
-    <artifactId>spring-boot-mysql-examples</artifactId>
+    <artifactId>spring-cloud-examples</artifactId>
 
 </project>
