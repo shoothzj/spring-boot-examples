@@ -14,12 +14,13 @@
         <module>spring-boot-sso-examples</module>
         <module>spring-cloud-examples</module>
         <module>spring-cloud-huawei-examples</module>
+        <module>spring-boot-webflux-examples</module>
     </modules>
 
     <parent>
         <artifactId>java-dependency</artifactId>
         <groupId>com.github.shoothzj</groupId>
-        <version>3.1.29</version>
+        <version>3.1.31</version>
     </parent>
 
     <artifactId>spring-boot-examples</artifactId>
