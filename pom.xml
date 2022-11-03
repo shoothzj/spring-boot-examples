@@ -15,16 +15,28 @@
         <module>spring-cloud-examples</module>
         <module>spring-cloud-huawei-examples</module>
         <module>spring-boot-webflux-examples</module>
+        <module>spring-cloud-examples/spring-cloud-gateway-example</module>
+        <module>spring-boot-webflux-examples/spring-boot-webflux-exception-example</module>
     </modules>
 
     <parent>
-        <artifactId>java-dependency</artifactId>
-        <groupId>com.github.shoothzj</groupId>
-        <version>3.1.31</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>2.4.0</version>
     </parent>
 
+    <groupId>com.github.shoothzj</groupId>
     <artifactId>spring-boot-examples</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+    <dependencyManagement>
+
+    </dependencyManagement>
 
     <dependencies>
         <dependency>
