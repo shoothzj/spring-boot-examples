@@ -7,6 +7,7 @@
     <modules>
         <module>spring-boot-apollo-example</module>
         <module>spring-boot-basic-example</module>
+        <module>spring-boot-email-example</module>
         <module>spring-boot-mongo-examples</module>
         <module>spring-boot-mybatis-examples</module>
         <module>spring-boot-mysql-examples</module>
@@ -31,6 +32,7 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencyManagement>
