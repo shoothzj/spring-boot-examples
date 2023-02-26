@@ -14,7 +14,7 @@ dependencies {
     compileOnly("org.projectlombok:lombok:1.18.22")
     implementation("org.springframework.boot:spring-boot-starter-web:2.6.6")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa:2.6.6")
-    implementation("mysql:mysql-connector-java:8.0.27")
+    implementation("com.mysql:mysql-connector-j:8.0.32")
     testImplementation("org.springframework.boot:spring-boot-starter-test:2.6.6")
     testImplementation("com.h2database:h2:2.0.202")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.2")

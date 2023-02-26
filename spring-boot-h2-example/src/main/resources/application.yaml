@@ -1,13 +1,6 @@
 spring:
-  datasource:
-    hikari:
-      connection-timeout: 20000
-      maximum-pool-size: 5
-    url: jdbc:mysql://localhost:3306/nopwd_db
-    username: root
-    password:
   jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
+    database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: create
     properties:

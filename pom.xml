@@ -8,6 +8,7 @@
         <module>spring-boot-apollo-example</module>
         <module>spring-boot-basic-example</module>
         <module>spring-boot-email-example</module>
+        <module>spring-boot-h2-example</module>
         <module>spring-boot-mongo-examples</module>
         <module>spring-boot-mybatis-examples</module>
         <module>spring-boot-mysql-examples</module>
@@ -22,7 +23,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>3.0.0</version>
+        <version>3.0.3</version>
     </parent>
 
     <groupId>com.github.shoothzj</groupId>
@@ -36,7 +37,13 @@
     </properties>
 
     <dependencyManagement>
-
+        <dependencies>
+            <dependency>
+                <groupId>com.mysql</groupId>
+                <artifactId>mysql-connector-j</artifactId>
+                <version>8.0.32</version>
+            </dependency>
+        </dependencies>
     </dependencyManagement>
 
     <dependencies>
