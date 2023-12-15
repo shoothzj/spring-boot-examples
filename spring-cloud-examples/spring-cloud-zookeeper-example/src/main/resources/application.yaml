@@ -1,10 +1,10 @@
 spring:
+  application:
+    name: backend
   cloud:
     zookeeper:
       connect-string: "localhost:2181"
-    discovery:
-      enabled: true
 
 logging:
   level:
-    org: info
+    org: debug
