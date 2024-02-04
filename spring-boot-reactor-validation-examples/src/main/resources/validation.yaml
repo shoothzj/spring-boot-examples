@@ -1,0 +1,39 @@
+openapi: 3.0.0
+tags:
+- name: Validation
+  description: Validation API
+info:
+  title: Validation API
+  version: 1.0.0
+paths:
+  /validation:
+    post:
+      tags:
+        - Validation
+      summary: Try To Validation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ValidationReq'
+      responses:
+        '200':
+          description: Validation Request
+components:
+  schemas:
+    ValidationReq:
+      type: object
+      properties:
+        validationMap:
+          $ref: '#/components/schemas/ValidationMap'
+      required:
+        - validationMap
+    ValidationMap:
+      type: object
+      minProperties: 1
+      maxProperties: 5
+      additionalProperties:
+        type: string
+        minLength: 1
+        maxLength: 32

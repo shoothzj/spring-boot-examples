@@ -23,11 +23,11 @@ public class PersonPo {
     @Column("age")
     private Integer age;
 
-    @Column("create_time")
+    @Column("created_time")
     @CreatedDate
-    private LocalDateTime createTime;
+    private LocalDateTime createdTime;
 
-    @Column("update_time")
+    @Column("updated_time")
     @LastModifiedDate
-    private LocalDateTime updateTime;
+    private LocalDateTime updatedTime;
 }

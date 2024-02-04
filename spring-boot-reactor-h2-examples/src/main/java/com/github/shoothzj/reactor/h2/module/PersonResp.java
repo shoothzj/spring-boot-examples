@@ -5,6 +5,6 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class CreatePersonResp {
+public class PersonResp {
     private String name;
 }
