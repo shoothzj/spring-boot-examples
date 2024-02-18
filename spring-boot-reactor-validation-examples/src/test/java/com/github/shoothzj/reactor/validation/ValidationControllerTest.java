@@ -40,4 +40,16 @@ public class ValidationControllerTest {
                 .exchange()
                 .expectStatus().isBadRequest();
     }
+
+    @Test
+    public void testValidationIntegerMax() {
+        String requestBody = """
+                {"validationInteger":1025}
+                """;
+        webTestClient.post().uri("/validation")
+                .contentType(MediaType.APPLICATION_JSON)
+                .bodyValue(requestBody)
+                .exchange()
+                .expectStatus().isBadRequest();
+    }
 }

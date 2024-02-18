@@ -25,6 +25,10 @@ components:
     ValidationReq:
       type: object
       properties:
+        validationInteger:
+          type: integer
+          minimum: 0
+          maximum: 1024
         validationMap:
           $ref: '#/components/schemas/ValidationMap'
       required:

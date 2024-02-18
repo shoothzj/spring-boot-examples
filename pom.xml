@@ -18,6 +18,7 @@
         <module>spring-boot-prometheus-example</module>
         <module>spring-boot-reactor-h2-examples</module>
         <module>spring-boot-reactor-mysql-examples</module>
+        <module>spring-boot-reactor-redis-examples</module>
         <module>spring-boot-redis-example</module>
         <module>spring-boot-security-example</module>
         <module>spring-boot-sso-examples</module>
