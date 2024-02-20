@@ -9,6 +9,11 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+    <packaging>pom</packaging>
+    <modules>
+        <module>spring-boot-reactor-redis-example</module>
+        <module>spring-boot-reactor-redis-configuration-example</module>
+    </modules>
     <groupId>com.shoothzj</groupId>
     <artifactId>spring-boot-reactor-redis-examples</artifactId>
 

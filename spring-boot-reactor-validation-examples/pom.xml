@@ -51,6 +51,7 @@
                             <modelPackage>com.github.shoothzj.reactor.validation.model</modelPackage>
                             <supportingFilesToGenerate>ApiUtil.java</supportingFilesToGenerate>
                             <configOptions>
+                                <delegatePattern>true</delegatePattern>
                                 <library>spring-boot</library>
                                 <openApiNullable>false</openApiNullable>
                                 <reactive>true</reactive>
