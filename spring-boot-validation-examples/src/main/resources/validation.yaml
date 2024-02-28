@@ -1,7 +1,7 @@
 openapi: 3.0.0
 tags:
-- name: Validation
-  description: Validation API
+  - name: Validation
+    description: Validation API
 info:
   title: Validation API
   version: 1.0.0
@@ -20,6 +20,27 @@ paths:
       responses:
         '200':
           description: Validation Request
+  /validation-form-data:
+    post:
+      tags:
+        - Validation
+      summary: Try To Validation Form Response
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                # multi-form string validation not works
+                validationString:
+                  type: string
+                  minLength: 1
+                  maxLength: 16
+                  pattern: '[a-z]{1,16}'
+      responses:
+        '200':
+          description: Validation Form Data Response
 components:
   schemas:
     ValidationReq:

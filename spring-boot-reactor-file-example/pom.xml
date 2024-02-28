@@ -9,20 +9,12 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>spring-boot-reactor-mysql-examples</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>spring-boot-reactor-mysql-configuration-example</module>
-    </modules>
+    <artifactId>spring-boot-reactor-file-example</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-r2dbc</artifactId>
         </dependency>
     </dependencies>
 
