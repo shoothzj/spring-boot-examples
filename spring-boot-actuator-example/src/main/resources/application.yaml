@@ -1,0 +1,9 @@
+management:
+  influx:
+    metrics:
+      export:
+        info: debug
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus

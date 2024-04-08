@@ -5,6 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
+        <module>spring-boot-actuator-example</module>
         <module>spring-boot-apollo-example</module>
         <module>spring-boot-basic-example</module>
         <module>spring-boot-email-example</module>
@@ -16,6 +17,7 @@
         <module>spring-boot-reactor-validation-examples</module>
         <module>spring-boot-postgre-examples</module>
         <module>spring-boot-prometheus-example</module>
+        <module>spring-boot-reactor-file-example</module>
         <module>spring-boot-reactor-h2-examples</module>
         <module>spring-boot-reactor-mysql-examples</module>
         <module>spring-boot-reactor-redis-examples</module>
@@ -26,7 +28,6 @@
         <module>spring-boot-webflux-examples</module>
         <module>spring-cloud-examples</module>
         <module>spring-cloud-huawei-examples</module>
-        <module>spring-boot-reactor-file-example</module>
     </modules>
 
     <parent>
@@ -44,6 +45,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- dependency -->
+        <apollo.version>2.2.0</apollo.version>
         <swagger-annotion.version>2.2.20</swagger-annotion.version>
         <!-- plugin -->
         <openapi-generator-maven-plugin.version>7.2.0</openapi-generator-maven-plugin.version>

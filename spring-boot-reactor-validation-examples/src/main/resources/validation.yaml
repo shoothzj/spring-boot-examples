@@ -1,7 +1,7 @@
 openapi: 3.0.0
 tags:
-- name: Validation
-  description: Validation API
+  - name: Validation
+    description: Validation API
 info:
   title: Validation API
   version: 1.0.0
@@ -20,6 +20,39 @@ paths:
       responses:
         '200':
           description: Validation Request
+  /validation-parent-nullable-child-required:
+    post:
+      tags:
+        - Validation
+      summary: Try To Validation Parent Nullable Child Required
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                parent:
+                  $ref: '#/components/schemas/RequiredChildNullableParentReq'
+      responses:
+        '200':
+          description: Validation Parent Nullable Child Required
+  /validation-path-string/{path}:
+    get:
+      tags:
+        - Validation
+      summary: Try To Validation Path String
+      parameters:
+        - name: path
+          in: path
+          required: true
+          schema:
+            type: string
+            minLength: 1
+            maxLength: 4
+      responses:
+        '200':
+          description: Validation Path String
 components:
   schemas:
     ValidationReq:
@@ -41,3 +74,25 @@ components:
         type: string
         minLength: 1
         maxLength: 32
+    RequiredChildNullableParentReq:
+      type: object
+      properties:
+        parent:
+          $ref: '#/components/schemas/RequiredChildNullableParent'
+    RequiredChildNullableParent:
+      type: object
+      properties:
+        child:
+          $ref: '#/components/schemas/RequiredChild'
+      required:
+        - child
+    RequiredChild:
+      type: object
+      properties:
+        validationString:
+          type: string
+          minLength: 1
+          maxLength: 16
+          pattern: '[a-z]{1,16}'
+      required:
+        - validationString

@@ -1,0 +1,14 @@
+server:
+  port: 9999
+spring:
+  profiles:
+    active: 'small'
+app:
+  id: test
+apollo:
+  bootstrap:
+    enabled: true
+  meta: http://localhost:8080
+#logging:
+#  level:
+#    root: DEBUG

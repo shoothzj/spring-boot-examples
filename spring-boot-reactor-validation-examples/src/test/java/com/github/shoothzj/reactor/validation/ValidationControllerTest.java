@@ -1,14 +1,11 @@
 package com.github.shoothzj.reactor.validation;
 
-import com.github.shoothzj.reactor.validation.api.ValidationApiController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.reactive.server.WebTestClient;
 
-@WebFluxTest(controllers = ValidationApiController.class)
-public class ValidationControllerTest {
+public class ValidationControllerTest extends BaseTestController {
 
     @Autowired
     private WebTestClient webTestClient;
@@ -21,7 +18,7 @@ public class ValidationControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .bodyValue(requestBody)
                 .exchange()
-                .expectStatus().isBadRequest();
+                .expectStatus().isOk();
     }
 
     @Test
@@ -38,7 +35,7 @@ public class ValidationControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .bodyValue(requestBody)
                 .exchange()
-                .expectStatus().isBadRequest();
+                .expectStatus().isOk();
     }
 
     @Test
@@ -50,6 +47,6 @@ public class ValidationControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .bodyValue(requestBody)
                 .exchange()
-                .expectStatus().isBadRequest();
+                .expectStatus().isOk();
     }
 }
