@@ -9,6 +9,13 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>spring-boot-reactor-mysql-configuration-example</artifactId>
+    <artifactId>spring-boot-reactor-mysql-config-code-example</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.asyncer</groupId>
+            <artifactId>r2dbc-mysql</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

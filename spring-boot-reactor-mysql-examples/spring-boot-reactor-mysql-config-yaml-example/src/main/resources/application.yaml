@@ -1,0 +1,9 @@
+spring:
+  r2dbc:
+    url: r2dbc:pool:mysql://localhost:3306/nopwd_db
+    username: root
+
+logging:
+  level:
+    io.r2dbc.postgresql.QUERY: DEBUG
+    io.r2dbc.postgresql.PARAM: DEBUG

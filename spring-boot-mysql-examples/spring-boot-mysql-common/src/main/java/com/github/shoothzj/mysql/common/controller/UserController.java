@@ -33,7 +33,6 @@ public class UserController {
         user.setUsername(userAddReq.getUsername());
         user.setPassword(userAddReq.getPassword());
         User save = userRepository.save(user);
-        userRepository.save(save);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 

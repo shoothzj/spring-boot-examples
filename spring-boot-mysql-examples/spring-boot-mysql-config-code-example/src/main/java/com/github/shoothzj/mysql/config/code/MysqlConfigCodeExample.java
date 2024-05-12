@@ -7,9 +7,6 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-/**
- * @author hezhangjian
- */
 @Slf4j
 @EnableJpaAuditing
 @EnableJpaRepositories({"com.github.shoothzj.mysql.common.repository"})
