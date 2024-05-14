@@ -1,4 +1,4 @@
-package com.github.shoothzj.reactor.mysql.config.yaml.domain;
+package com.github.shoothzj.reactor.mysql.common.domain;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -13,8 +13,8 @@ import org.springframework.data.relational.core.mapping.Table;
  *     id BIGINT PRIMARY KEY AUTO_INCREMENT,
  *     username VARCHAR(255) NOT NULL,
  *     password VARCHAR(255) NOT NULL,
- *     created_time DATETIME(3) DEFAULT,
- *     updated_time DATETIME(3) DEFAULT,
+ *     created_time DATETIME(3),
+ *     updated_time DATETIME(3)
  * );
  */
 @Table(name = "T_User")

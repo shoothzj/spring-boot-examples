@@ -12,6 +12,7 @@
     <artifactId>spring-boot-reactor-mysql-examples</artifactId>
     <packaging>pom</packaging>
     <modules>
+        <module>spring-boot-reactor-mysql-common</module>
         <module>spring-boot-reactor-mysql-config-code-example</module>
         <module>spring-boot-reactor-mysql-config-yaml-example</module>
     </modules>

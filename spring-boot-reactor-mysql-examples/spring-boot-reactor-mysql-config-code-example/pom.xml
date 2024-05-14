@@ -13,8 +13,18 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.github.shoothzj</groupId>
+            <artifactId>spring-boot-reactor-mysql-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
             <groupId>io.asyncer</groupId>
             <artifactId>r2dbc-mysql</artifactId>
+            <version>1.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>io.r2dbc</groupId>
+            <artifactId>r2dbc-spi</artifactId>
         </dependency>
     </dependencies>
 

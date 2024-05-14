@@ -1,4 +1,4 @@
-package com.github.shoothzj.reactor.mysql.config.yaml.domain;
+package com.github.shoothzj.reactor.mysql.common.domain;
 
 import org.reactivestreams.Publisher;
 import org.springframework.data.r2dbc.mapping.OutboundRow;
@@ -33,6 +33,9 @@ public class AuditableEntityCallback implements BeforeSaveCallback<AuditableEnti
     }
 
     private static LocalDateTime roundToMilliseconds(LocalDateTime dateTime) {
+        if (dateTime == null) {
+            return roundToMilliseconds(LocalDateTime.now());
+        }
         LocalDateTime localDateTime = dateTime.truncatedTo(ChronoUnit.MILLIS);
         int dateTimeNano = dateTime.getNano() % 1000_000;
         if (dateTimeNano >= 500_000) {

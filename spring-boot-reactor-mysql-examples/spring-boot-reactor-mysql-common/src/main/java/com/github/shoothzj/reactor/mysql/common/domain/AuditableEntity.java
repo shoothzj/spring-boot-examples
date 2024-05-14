@@ -1,4 +1,4 @@
-package com.github.shoothzj.reactor.mysql.config.yaml.domain;
+package com.github.shoothzj.reactor.mysql.common.domain;
 
 import lombok.ToString;
 import org.springframework.data.annotation.CreatedDate;

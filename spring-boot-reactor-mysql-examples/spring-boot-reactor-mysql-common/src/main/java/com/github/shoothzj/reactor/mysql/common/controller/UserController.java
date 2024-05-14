@@ -1,7 +1,7 @@
-package com.github.shoothzj.reactor.mysql.config.yaml.controller;
+package com.github.shoothzj.reactor.mysql.common.controller;
 
-import com.github.shoothzj.reactor.mysql.config.yaml.domain.User;
-import com.github.shoothzj.reactor.mysql.config.yaml.repo.UserRepo;
+import com.github.shoothzj.reactor.mysql.common.domain.User;
+import com.github.shoothzj.reactor.mysql.common.repo.UserRepo;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +15,7 @@ import reactor.core.publisher.Mono;
 public class UserController {
     private final UserRepo userRepo;
 
-    @GetMapping(path = "/test")
+    @GetMapping(path = "/user/test")
     public Mono<ResponseEntity<Void>> getUsers() {
         log.info("begin to save user");
         User user = new User();
