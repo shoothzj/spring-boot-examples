@@ -1,4 +1,4 @@
-package com.github.shoothzj.webflux.exception;
+package com.github.shoothzj.reactor.basic.exception;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.web.error.ErrorAttributeOptions;
@@ -20,11 +20,11 @@ public class GlobalErrorAttributes extends DefaultErrorAttributes {
                 request, options);
         Throwable throwable = getError(request);
         if (throwable instanceof CustomException customException) {
-            map.put("status", HttpStatus.SERVICE_UNAVAILABLE);
+            map.put("status", HttpStatus.SERVICE_UNAVAILABLE.value());
             log.error("custom exception is ", customException);
         } else {
             log.error("exception is ", throwable);
-            map.put("status", HttpStatus.INTERNAL_SERVER_ERROR);
+            map.put("status", HttpStatus.INTERNAL_SERVER_ERROR.value());
         }
         map.put("message", throwable.getMessage());
         return map;

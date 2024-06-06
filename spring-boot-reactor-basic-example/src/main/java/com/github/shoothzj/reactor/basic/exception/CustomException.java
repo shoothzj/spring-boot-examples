@@ -1,4 +1,4 @@
-package com.github.shoothzj.webflux.exception;
+package com.github.shoothzj.reactor.basic.exception;
 
 public class CustomException extends RuntimeException {
 

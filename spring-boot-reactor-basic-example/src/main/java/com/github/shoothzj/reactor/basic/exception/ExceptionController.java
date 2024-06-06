@@ -1,4 +1,4 @@
-package com.github.shoothzj.webflux.exception;
+package com.github.shoothzj.reactor.basic.exception;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
